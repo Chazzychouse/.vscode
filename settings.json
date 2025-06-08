@@ -1,0 +1,100 @@
+{
+  "editor.cursorBlinking": "solid",
+  "workbench.iconTheme": "icons",
+  "workbench.colorTheme": "Dobri Next -B01- Hard",
+  "editor.fontSize": 20,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  // "editor.fontFamily": "Jetbrains Mono",
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "explorer.compactFolders": false,
+  "editor.tabSize": 2,
+  "workbench.editor.wrapTabs": true,
+  "editor.renderWhitespace": "all",
+  "editor.guides.indentation": true,
+  "editor.formatOnSave": true,
+  "git.autofetch": true,
+  "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
+
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "after": ["o", "<Esc>", "k", "$"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "p", "s"],
+      "commands": ["fuzzySearch.activeTextEditor"]
+    },
+    {
+      "before": ["<leader>", "n"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+    {
+      "before": ["<leader>", "G"],
+      "commands": ["workbench.action.terminal.killAll"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "tab"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<leader>", "1"],
+      "commands": ["workbench.action.openEditorAtIndex1"]
+    },
+    {
+      "before": ["<leader>", "2"],
+      "commands": ["workbench.action.openEditorAtIndex2"]
+    },
+    {
+      "before": ["<leader>", "3"],
+      "commands": ["workbench.action.openEditorAtIndex3"]
+    },
+    {
+      "before": ["<leader>", "4"],
+      "commands": ["workbench.action.openEditorAtIndex4"]
+    },
+    {
+      "before": ["<leader>", "5"],
+      "commands": ["workbench.action.openEditorAtIndex5"]
+    },
+    {
+      "before": ["<leader>", "6"],
+      "commands": ["workbench.action.openEditorAtIndex6"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["editor.action.showHover"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "terminal.integrated.allowChords": false,
+  "glassit.alpha": 195
+}

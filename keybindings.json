@@ -1,0 +1,88 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+m ctrl+i",
+    "command": "editor.emmet.action.balanceIn"
+  },
+  {
+    "key": "ctrl+m ctrl+o",
+    "command": "editor.emmet.action.balanceOut"
+  },
+  {
+    "key": "ctrl+m ctrl+=",
+    "command": "editor.emmet.action.evaluateMathExpression"
+  },
+  {
+    "key": "ctrl+m ctrl+m",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "ctrl+m ctrl+k",
+    "command": "editor.emmet.action.nextEditPoint"
+  },
+  {
+    "key": "ctrl+m ctrl+j",
+    "command": "editor.emmet.action.prevEditPoint"
+  },
+  {
+    "key": "ctrl+m ctrl+shift+m",
+    "command": "editor.emmet.action.mergeLines"
+  },
+  {
+    "key": "ctrl+m ctrl+r",
+    "command": "editor.emmet.action.reflectCSSValue"
+  },
+  {
+    "key": "ctrl+m ctrl+backspace",
+    "command": "editor.emmet.action.removeTag"
+  },
+  {
+    "key": "ctrl+m ctrl+.",
+    "command": "editor.emmet.action.selectNextItem"
+  },
+  {
+    "key": "ctrl+m ctrl+,",
+    "command": "editor.emmet.action.selectPrevItem"
+  },
+  {
+    "key": "ctrl+m ctrl+s",
+    "command": "editor.emmet.action.splitJoinTag"
+  },
+  {
+    "key": "ctrl+m ctrl+/",
+    "command": "editor.emmet.action.toggleComment"
+  },
+  {
+    "key": "ctrl+m ctrl+u",
+    "command": "editor.emmet.action.updateImageSize"
+  },
+  {
+    "key": "ctrl+m ctrl+t",
+    "command": "editor.emmet.action.updateTag"
+  },
+  {
+    "key": "ctrl+m ctrl+l",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    "key": "ctrl+m ctrl+c",
+    "command": "workbench.action.showEmmetCommands"
+  },
+  {
+    "key": "shift shift",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "composerMode.agent"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.showHover",
+    "when": "editorHoverVisible"
+  }
+]
