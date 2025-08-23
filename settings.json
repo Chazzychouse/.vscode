@@ -1,21 +1,57 @@
 {
+  "window.commandCenter": true,
   "editor.cursorBlinking": "solid",
-  "workbench.iconTheme": "icons",
-  "workbench.colorTheme": "Dobri Next -B01- Hard",
-  "editor.fontSize": 20,
-  "editor.fontFamily": "Consolas, 'Courier New', monospace",
-  // "editor.fontFamily": "Jetbrains Mono",
-
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "Theme Darker",
+  //https://www.jetbrains.com/lp/mono/
+  "editor.fontFamily": "'JetBrains Mono', monospace",
+  "editor.fontWeight": "600",
+  "editor.fontSize": 18,
+  "editor.fontLigatures": true,
   "explorer.compactFolders": false,
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "workbench.editor.wrapTabs": true,
   "editor.renderWhitespace": "all",
   "editor.guides.indentation": true,
-  "editor.formatOnSave": true,
-  "git.autofetch": true,
-  "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
+  //"editor.formatOnSave": true,
+  "cursor.cpp.disabledLanguages": [
+    "plaintext",
+    "markdown",
+    "scminput"
+  ],
 
+  //extension
+  //terminal
+  "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.2,
+  "workbench.colorCustomizations": {
+    "terminal.foreground": "#3bd100",
+    "terminal.background": "#000000"
+  },
+  "makefile.configureOnOpen": true,
+  "window.zoomLevel": 1,
+  "rust-analyzer.inlayHints.typeHints.enable": true,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "Cargo.toml": "Cargo.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "database-client.autoSync": true,
+  "git.autofetch": true,
+  //vim
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -23,78 +59,163 @@
   "vim.hlsearch": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     },
     {
-      "before": ["<leader>", "o"],
-      "after": ["o", "<Esc>", "k", "$"]
+      "before": [
+        "<leader>",
+        "o"
+      ],
+      "after": [
+        "o",
+        "<Esc>",
+        "k",
+        "$"
+      ]
     },
     {
-      "before": ["K"],
-      "commands": ["lineBreakInsert"],
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "lineBreakInsert"
+      ],
       "silent": true
     },
     {
-      "before": ["<leader>", "p", "s"],
-      "commands": ["fuzzySearch.activeTextEditor"]
+      "before": [
+        "<leader>",
+        "p",
+        "s"
+      ],
+      "commands": [
+        "fuzzySearch.activeTextEditor"
+      ]
     },
     {
-      "before": ["<leader>", "n"],
-      "commands": ["workbench.action.toggleSidebarVisibility"]
+      "before": [
+        "<leader>",
+        "n"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
     },
     {
-      "before": ["<leader>", "/"],
-      "commands": ["workbench.explorer.fileView.focus"]
+      "before": [
+        "<leader>",
+        "/"
+      ],
+      "commands": [
+        "workbench.explorer.fileView.focus"
+      ]
     },
     {
-      "before": ["<leader>", "G"],
-      "commands": ["workbench.action.terminal.killAll"]
+      "before": [
+        "<leader>",
+        "G"
+      ],
+      "commands": [
+        "workbench.action.terminal.killAll"
+      ]
     },
     {
-      "before": ["<leader>", "w"],
-      "commands": ["workbench.action.closeActiveEditor"]
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
     },
     {
-      "before": ["<leader>", "tab"],
-      "commands": ["workbench.action.nextEditor"]
+      "before": [
+        "<leader>",
+        "tab"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
     },
     {
-      "before": ["<leader>", "1"],
-      "commands": ["workbench.action.openEditorAtIndex1"]
+      "before": [
+        "<leader>",
+        "1"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex1"
+      ]
     },
     {
-      "before": ["<leader>", "2"],
-      "commands": ["workbench.action.openEditorAtIndex2"]
+      "before": [
+        "<leader>",
+        "2"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex2"
+      ]
     },
     {
-      "before": ["<leader>", "3"],
-      "commands": ["workbench.action.openEditorAtIndex3"]
+      "before": [
+        "<leader>",
+        "3"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex3"
+      ]
     },
     {
-      "before": ["<leader>", "4"],
-      "commands": ["workbench.action.openEditorAtIndex4"]
+      "before": [
+        "<leader>",
+        "4"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex4"
+      ]
     },
     {
-      "before": ["<leader>", "5"],
-      "commands": ["workbench.action.openEditorAtIndex5"]
+      "before": [
+        "<leader>",
+        "5"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex5"
+      ]
     },
     {
-      "before": ["<leader>", "6"],
-      "commands": ["workbench.action.openEditorAtIndex6"]
+      "before": [
+        "<leader>",
+        "6"
+      ],
+      "commands": [
+        "workbench.action.openEditorAtIndex6"
+      ]
     },
     {
-      "before": ["<leader>", "j"],
-      "commands": ["editor.action.showHover"]
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
     }
   ],
   "vim.leader": "<space>",
-  "terminal.integrated.allowChords": false,
-  "glassit.alpha": 195
 }
